@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.statement.examples.packages;
+package sql_package.drivermanager_class;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ public class DriverManagerExamples {
 
         DriverManager.setLoginTimeout(10); //to set login timeout
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "root")) {
+            .getConnection("jdbc:mysql://localhost:3306/test1?useSSL=false", "root", "")) {
             System.out.println("Connection created");
             //to get login timeout
             System.out.println("your login timeout is = " + DriverManager.getLoginTimeout());

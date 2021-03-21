@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.resultset;
+package sql_package.resultset_interface;
 
 import java.sql.BatchUpdateException;
 import java.sql.Connection;
@@ -31,7 +31,7 @@ public class ResultSetExamples {
 
     private static void batchUpdate() {
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "root");
+            .getConnection("jdbc:mysql://localhost:3306/test1?useSSL=false", "root", "");
             // Step 2:Create a statement using connection object
             Statement statement = connection.createStatement()) {
             connection.setAutoCommit(false);

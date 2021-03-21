@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.statement.examples;
+package sql_package.statement_interface;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -26,7 +26,7 @@ public class CreateStatementExample {
         System.out.println(createTableSQL);
         // Step 1: Establishing a Connection
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "root");
+            .getConnection("jdbc:mysql://localhost:3306/test1?useSSL=false", "root", "");
 
             // Step 2:Create a statement using connection object
             Statement statement = connection.createStatement();) {

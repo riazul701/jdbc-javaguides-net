@@ -9,7 +9,7 @@ BEGIN
 END
 DELIMITER ;
 */
-package com.javaguides.jdbc.storedprocedure;
+package callable_statement;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -24,9 +24,9 @@ import java.sql.SQLException;
  */
 public class CallableMultipleResultSetExample {
     public static void main(String[] args) {
-        String jdbcUrl = "jdbc:mysql://localhost:3306/mysql_database?useSSL=false";
+        String jdbcUrl = "jdbc:mysql://localhost:3306/test1?useSSL=false";
         String username = "root";
-        String password = "root";
+        String password = "";
         String sql = "call retreive_different_results()";
 
         try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password); CallableStatement stmt = conn.prepareCall(sql);) {

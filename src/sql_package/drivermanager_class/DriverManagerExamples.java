@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.statement.examples.packages;
+package sql_package.drivermanager_class;
 
 import java.sql.Driver;
 import java.sql.DriverAction;

@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.batch;
+package batch_processing.preparedstatement_batch_update;
 
 import java.sql.BatchUpdateException;
 import java.sql.Connection;
@@ -38,7 +38,7 @@ public class BatchUpdateExample {
         String UPDATE_USERS_SQL = "update users set name = ? where id = ?;";
 
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "root");
+            .getConnection("jdbc:mysql://localhost:3306/test1?useSSL=false", "root", "");
             // Step 2:Create a statement using connection object
             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USERS_SQL)) {
             connection.setAutoCommit(false);

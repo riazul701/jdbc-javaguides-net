@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.batch;
+package transaction;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,9 +15,9 @@ public class JDBCTransactionExample {
         "  (id, name, email, country, password) VALUES " + " (?, ?, ?, ?, ?);";
     private static final String UPDATE_USERS_SQL = "update users set name = ? where id = ?;";
 
-    private static final String jdbcUrl = "jdbc:mysql://localhost:3306/mysql_database?useSSL=false";
+    private static final String jdbcUrl = "jdbc:mysql://localhost:3306/test1?useSSL=false";
     private static final String username = "root";
-    private static final String password = "root";
+    private static final String password = "";
 
     public static void main(String[] args) {
 

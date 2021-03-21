@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.preparestatement.examples;
+package sql_package.preparedstatement_interface;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,7 +21,7 @@ public class SelectPStatementExample {
 
         // Step 1: Establishing a Connection
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "root");
+            .getConnection("jdbc:mysql://localhost:3306/test1?useSSL=false", "root", "");
 
             // Step 2:Create a statement using connection object
             PreparedStatement preparedStatement = connection.prepareStatement(QUERY);) {

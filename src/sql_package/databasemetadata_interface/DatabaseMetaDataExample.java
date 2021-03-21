@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.databasemetadata;
+package sql_package.databasemetadata_interface;
 
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
@@ -19,7 +19,7 @@ public class DatabaseMetaDataExample {
     private static void databaseInfo() {
         // Step 1: Establishing a Connection
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "root")) {
+            .getConnection("jdbc:mysql://localhost:3306/test1?useSSL=false", "root", "")) {
             DatabaseMetaData dbmd = connection.getMetaData();
             System.out.println("Driver Name: " + dbmd.getDriverName());
             System.out.println("Driver Version: " + dbmd.getDriverVersion());

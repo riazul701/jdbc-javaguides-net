@@ -1,4 +1,4 @@
-package com.javaguides.jdbc.batch;
+package batch_processing.statement_batch_insert;
 
 import java.sql.BatchUpdateException;
 import java.sql.Connection;
@@ -19,7 +19,7 @@ public class BatchInsertExample {
     }
     private static void batchUpdate() {
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "root");
+            .getConnection("jdbc:mysql://localhost:3306/test1?useSSL=false", "root", "");
             // Step 2:Create a statement using connection object
             Statement statement = connection.createStatement()) {
             connection.setAutoCommit(false);
